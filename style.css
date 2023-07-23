@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --tomato: hsl(4, 100%, 67%);
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
+
 @font-face {
   font-family: 'Roboto';
   src: url(./assets/fonts/Roboto-Regular.ttf);
@@ -24,4 +32,34 @@ body {
 
 p {
   font-size: 16px;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+@media (min-width: 375px) {
+  body {
+    height: 100vh;
+    position: relative;
+  }
+
+  .sign-up-card {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sign-up-details h1 {
+    color: var(--dark-slate-grey);
+    font-size: 32px;
+  }
 }
