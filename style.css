@@ -13,3 +13,15 @@
   font-family: 'Roboto-Bold';
   src: url(./assets/fonts/Roboto-Bold.ttf);
 }
+
+body {
+  font-family: Roboto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 16px;
+}
